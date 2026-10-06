@@ -1,0 +1,12 @@
+{
+  "training_frames": "0-69",
+  "validation_frames": "70-84",
+  "heldout_test_frames": "85-99",
+  "train_edges_count": 576,
+  "val_edges_count": 187,
+  "test_edges_count": 117,
+  "parameters_influenced_by_test_labels": false,
+  "early_stopping_influenced_by_test_labels": false,
+  "checkpoint_selection_influenced_by_test_labels": false,
+  "provenance_status": "CLEAN_UNLEAKED_TEMPORAL_SPLIT"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "priyalmantri/biohub-cell-tracking-pipeline",
+  "title": "BioHub Cell Tracking Pipeline",
+  "code_file": "biohub_cell_tracking_pipeline.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_internet": "false",
+  "dataset_sources": [
+    "priyalmantri/biohub-stgnn-checkpoint",
+    "priyalmantri/zarr-offline-wheels"
+  ],
+  "competition_sources": ["biohub-cell-tracking-during-development"],
+  "kernel_sources": []
+}
+

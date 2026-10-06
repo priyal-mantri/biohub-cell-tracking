@@ -1,0 +1,139 @@
+{
+  "candidate_graph_stats": {
+    "num_nodes": 861,
+    "num_frames": 100,
+    "num_candidate_edges": 880
+  },
+  "synthetic_conflict_test": {
+    "success": true,
+    "selected_pairs": [
+      [
+        2,
+        3
+      ],
+      [
+        1,
+        4
+      ]
+    ]
+  },
+  "mode_results": {
+    "STGNN-Only ILP": {
+      "solver_result": {
+        "status": "optimal",
+        "success": true,
+        "objective_value": 1507.4124220609665,
+        "solve_time_sec": 0.06014704704284668,
+        "num_variables": 880,
+        "num_constraints": 65,
+        "selected_edge_count": 845,
+        "termination_reason": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+      },
+      "diagnostics": {
+        "total_nodes": 861,
+        "total_candidate_edges": 880,
+        "selected_edges": 845,
+        "rejected_edges": 35,
+        "num_track_fragments": 16,
+        "fragment_lengths": {
+          "min": 14.0,
+          "median": 43.5,
+          "max": 100.0,
+          "mean": 53.8125
+        },
+        "longest_fragment_len": 100,
+        "isolated_nodes_count": 0,
+        "nodes_with_predecessor_only": 16,
+        "nodes_with_successor_only": 16,
+        "nodes_with_both": 829,
+        "nodes_with_neither": 0,
+        "constraint_violations_count": 0,
+        "gt_edges_count": 845,
+        "true_positives": 819,
+        "false_positives": 26,
+        "false_negatives": 26,
+        "edge_precision": 0.9692307692307692,
+        "edge_recall": 0.9692307692307692,
+        "edge_f1": 0.9692307692307692
+      }
+    },
+    "Geometry-Only ILP": {
+      "solver_result": {
+        "status": "optimal",
+        "success": true,
+        "objective_value": 2271.40662599357,
+        "solve_time_sec": 0.015346050262451172,
+        "num_variables": 880,
+        "num_constraints": 65,
+        "selected_edge_count": 798,
+        "termination_reason": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+      },
+      "diagnostics": {
+        "total_nodes": 861,
+        "total_candidate_edges": 880,
+        "selected_edges": 798,
+        "rejected_edges": 82,
+        "num_track_fragments": 51,
+        "fragment_lengths": {
+          "min": 2.0,
+          "median": 12.0,
+          "max": 55.0,
+          "mean": 16.647058823529413
+        },
+        "longest_fragment_len": 55,
+        "isolated_nodes_count": 12,
+        "nodes_with_predecessor_only": 51,
+        "nodes_with_successor_only": 51,
+        "nodes_with_both": 747,
+        "nodes_with_neither": 12,
+        "constraint_violations_count": 0,
+        "gt_edges_count": 845,
+        "true_positives": 798,
+        "false_positives": 0,
+        "false_negatives": 47,
+        "edge_precision": 1.0,
+        "edge_recall": 0.9443786982248521,
+        "edge_f1": 0.9713937918441875
+      }
+    },
+    "Combined ILP": {
+      "solver_result": {
+        "status": "optimal",
+        "success": true,
+        "objective_value": 3755.5008313858907,
+        "solve_time_sec": 0.013213396072387695,
+        "num_variables": 880,
+        "num_constraints": 65,
+        "selected_edge_count": 844,
+        "termination_reason": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+      },
+      "diagnostics": {
+        "total_nodes": 861,
+        "total_candidate_edges": 880,
+        "selected_edges": 844,
+        "rejected_edges": 36,
+        "num_track_fragments": 16,
+        "fragment_lengths": {
+          "min": 13.0,
+          "median": 43.5,
+          "max": 100.0,
+          "mean": 53.75
+        },
+        "longest_fragment_len": 100,
+        "isolated_nodes_count": 1,
+        "nodes_with_predecessor_only": 16,
+        "nodes_with_successor_only": 16,
+        "nodes_with_both": 828,
+        "nodes_with_neither": 1,
+        "constraint_violations_count": 0,
+        "gt_edges_count": 845,
+        "true_positives": 844,
+        "false_positives": 0,
+        "false_negatives": 1,
+        "edge_precision": 1.0,
+        "edge_recall": 0.9988165680473373,
+        "edge_f1": 0.9994079336885732
+      }
+    }
+  }
+}

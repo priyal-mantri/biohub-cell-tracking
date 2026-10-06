@@ -1,0 +1,102 @@
+{
+  "matching_result": {
+    "geff_node_count": 861,
+    "canonical_node_count": 861,
+    "matched_geff_count": 861,
+    "unmatched_geff_count": 0,
+    "matching_success_rate": 100.0
+  },
+  "gt_edge_distance_dist": {
+    "min": 0.0,
+    "median": 0.9084026217460632,
+    "max": 9.959341049194336,
+    "mean": 1.3312714099884033
+  },
+  "configurations": [
+    {
+      "configuration": "d_max=10um, top_k=3",
+      "candidate_edges": 848,
+      "mean_candidates_per_node": 0.9929742388758782,
+      "candidate_recall": 1.0,
+      "evaluable_recall": 1.0,
+      "zero_candidate_pct": 1.053864168618267,
+      "recovered_gt_edges": 845,
+      "missing_gt_edges": 0,
+      "missing_reasons": {
+        "source_unmatched": 0,
+        "destination_unmatched": 0,
+        "distance_gate_rejected": 0,
+        "top_k_truncated": 0,
+        "other": 0
+      }
+    },
+    {
+      "configuration": "d_max=15um, top_k=5",
+      "candidate_edges": 862,
+      "mean_candidates_per_node": 1.009367681498829,
+      "candidate_recall": 1.0,
+      "evaluable_recall": 1.0,
+      "zero_candidate_pct": 0.936768149882904,
+      "recovered_gt_edges": 845,
+      "missing_gt_edges": 0,
+      "missing_reasons": {
+        "source_unmatched": 0,
+        "destination_unmatched": 0,
+        "distance_gate_rejected": 0,
+        "top_k_truncated": 0,
+        "other": 0
+      }
+    },
+    {
+      "configuration": "d_max=20um, top_k=5",
+      "candidate_edges": 880,
+      "mean_candidates_per_node": 1.0304449648711944,
+      "candidate_recall": 1.0,
+      "evaluable_recall": 1.0,
+      "zero_candidate_pct": 0.702576112412178,
+      "recovered_gt_edges": 845,
+      "missing_gt_edges": 0,
+      "missing_reasons": {
+        "source_unmatched": 0,
+        "destination_unmatched": 0,
+        "distance_gate_rejected": 0,
+        "top_k_truncated": 0,
+        "other": 0
+      }
+    },
+    {
+      "configuration": "d_max=20um, top_k=10",
+      "candidate_edges": 880,
+      "mean_candidates_per_node": 1.0304449648711944,
+      "candidate_recall": 1.0,
+      "evaluable_recall": 1.0,
+      "zero_candidate_pct": 0.702576112412178,
+      "recovered_gt_edges": 845,
+      "missing_gt_edges": 0,
+      "missing_reasons": {
+        "source_unmatched": 0,
+        "destination_unmatched": 0,
+        "distance_gate_rejected": 0,
+        "top_k_truncated": 0,
+        "other": 0
+      }
+    },
+    {
+      "configuration": "d_max=30um, top_k=None",
+      "candidate_edges": 1068,
+      "mean_candidates_per_node": 1.2505854800936769,
+      "candidate_recall": 1.0,
+      "evaluable_recall": 1.0,
+      "zero_candidate_pct": 0.468384074941452,
+      "recovered_gt_edges": 845,
+      "missing_gt_edges": 0,
+      "missing_reasons": {
+        "source_unmatched": 0,
+        "destination_unmatched": 0,
+        "distance_gate_rejected": 0,
+        "top_k_truncated": 0,
+        "other": 0
+      }
+    }
+  ]
+}

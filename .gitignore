@@ -1,0 +1,40 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Pytest cache
+.pytest_cache/
+
+# Environment / IDE / OS files
+.env
+.venv
+env/
+venv/
+.idea/
+.vscode/
+.DS_Store
+
+# Datasets and GEFF ground truth files (DO NOT COMMIT DATASETS)
+train/
+*.zarr/
+*.geff/
+data/
+
+# Model exports and Kaggle wheels
+zarr_wheels/
+dataset_export/
+
+# Kaggle Notebook Duplicate Folders & Models
+kaggle_notebook/src/
+kaggle_notebook/models/
+kaggle_notebook/stgnn_checkpoint.pt
+kaggle_notebook/__pycache__/
+
+# Output files & submission artifacts
+submission.csv
+*.log
+results/kaggle_remote_output/
+results/v10_output/
+results/kaggle_run/
+results/test_sub_run/

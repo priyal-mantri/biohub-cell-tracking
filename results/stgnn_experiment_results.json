@@ -1,0 +1,110 @@
+{
+  "split": {
+    "train_frames": [
+      0,
+      69
+    ],
+    "val_frames": [
+      70,
+      84
+    ],
+    "test_frames": [
+      85,
+      99
+    ],
+    "train_edges": 576,
+    "val_edges": 187,
+    "test_edges": 117
+  },
+  "overfit_test": {
+    "initial_loss": 0.6600639224052429,
+    "final_loss": 7.013190213029513e-14,
+    "overfit_success": true
+  },
+  "geometric_baseline_test_metrics": {
+    "roc_auc": 0.5,
+    "pr_auc": 1.0,
+    "precision": 1.0,
+    "recall": 0.6068376068376068,
+    "f1": 0.7553191489361701,
+    "positive_edge_recall": 0.6068376068376068,
+    "negative_edge_specificity": 0.0,
+    "mean_prob_positive": 0.5987454652786255,
+    "mean_prob_negative": 0.0,
+    "total_edges": 117,
+    "pos_count": 117,
+    "neg_count": 0
+  },
+  "geometry_only_stgnn_test_metrics": {
+    "roc_auc": 0.5,
+    "pr_auc": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "positive_edge_recall": 1.0,
+    "negative_edge_specificity": 0.0,
+    "mean_prob_positive": 0.8699893951416016,
+    "mean_prob_negative": 0.0,
+    "total_edges": 117,
+    "pos_count": 117,
+    "neg_count": 0
+  },
+  "graph_aware_stgnn_test_metrics": {
+    "roc_auc": 0.5,
+    "pr_auc": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "positive_edge_recall": 1.0,
+    "negative_edge_specificity": 0.0,
+    "mean_prob_positive": 0.8944149017333984,
+    "mean_prob_negative": 0.0,
+    "total_edges": 117,
+    "pos_count": 117,
+    "neg_count": 0
+  },
+  "displacement_binned_test_metrics": {
+    "Low (<1.5 um)": {
+      "roc_auc": 0.5,
+      "pr_auc": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "positive_edge_recall": 1.0,
+      "negative_edge_specificity": 0.0,
+      "mean_prob_positive": 0.8943580985069275,
+      "mean_prob_negative": 0.0,
+      "total_edges": 75,
+      "pos_count": 75,
+      "neg_count": 0
+    },
+    "Medium (1.5-3.5 um)": {
+      "roc_auc": 0.5,
+      "pr_auc": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "positive_edge_recall": 1.0,
+      "negative_edge_specificity": 0.0,
+      "mean_prob_positive": 0.8945214152336121,
+      "mean_prob_negative": 0.0,
+      "total_edges": 41,
+      "pos_count": 41,
+      "neg_count": 0
+    },
+    "High (>3.5 um)": {
+      "roc_auc": 0.5,
+      "pr_auc": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "positive_edge_recall": 1.0,
+      "negative_edge_specificity": 0.0,
+      "mean_prob_positive": 0.8943175077438354,
+      "mean_prob_negative": 0.0,
+      "total_edges": 1,
+      "pos_count": 1,
+      "neg_count": 0
+    }
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "model_provenance": {
+    "training_frames": "0-69",
+    "validation_frames": "70-84",
+    "heldout_test_frames": "85-99",
+    "train_edges_count": 576,
+    "val_edges_count": 187,
+    "test_edges_count": 117,
+    "parameters_influenced_by_test_labels": false,
+    "early_stopping_influenced_by_test_labels": false,
+    "checkpoint_selection_influenced_by_test_labels": false,
+    "provenance_status": "CLEAN_UNLEAKED_TEMPORAL_SPLIT"
+  },
+  "test_graph_stats": {
+    "num_test_nodes": 127,
+    "num_test_candidate_edges": 117,
+    "num_test_positive_gt_edges": 117,
+    "num_test_negative_candidate_edges": 0,
+    "total_geff_test_gt_edges": 117,
+    "gt_candidate_recall": 1.0,
+    "edge_population_checksum": "48743343ee3a2b1f"
+  },
+  "raw_stgnn_heldout_metrics": {
+    "roc_auc": 0.5,
+    "pr_auc": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "positive_edge_recall": 1.0,
+    "negative_edge_specificity": 0.0,
+    "mean_prob_positive": 0.9550321698188782,
+    "mean_prob_negative": 0.0,
+    "total_edges": 117,
+    "pos_count": 117,
+    "neg_count": 0
+  },
+  "ilp_heldout_mode_results": {
+    "Geometry-Only ILP": {
+      "solver_result": {
+        "status": "optimal",
+        "success": true,
+        "objective_value": 243.76045094820157,
+        "solve_time_sec": 0.012102127075195312,
+        "num_variables": 117,
+        "num_constraints": 234,
+        "selected_edge_count": 115,
+        "termination_reason": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+      },
+      "diagnostics": {
+        "total_nodes": 127,
+        "total_candidate_edges": 117,
+        "selected_edges": 115,
+        "rejected_edges": 2,
+        "num_track_fragments": 12,
+        "fragment_lengths": {
+          "min": 2.0,
+          "median": 11.0,
+          "max": 15.0,
+          "mean": 10.583333333333334
+        },
+        "longest_fragment_len": 15,
+        "isolated_nodes_count": 0,
+        "nodes_with_predecessor_only": 12,
+        "nodes_with_successor_only": 12,
+        "nodes_with_both": 103,
+        "nodes_with_neither": 0,
+        "constraint_violations_count": 0,
+        "gt_edges_count": 117,
+        "true_positives": 115,
+        "false_positives": 0,
+        "false_negatives": 2,
+        "edge_precision": 1.0,
+        "edge_recall": 0.9829059829059829,
+        "edge_f1": 0.9913793103448275
+      }
+    },
+    "STGNN-Only ILP": {
+      "solver_result": {
+        "status": "optimal",
+        "success": true,
+        "objective_value": 357.89247488975525,
+        "solve_time_sec": 0.009776592254638672,
+        "num_variables": 117,
+        "num_constraints": 234,
+        "selected_edge_count": 117,
+        "termination_reason": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+      },
+      "diagnostics": {
+        "total_nodes": 127,
+        "total_candidate_edges": 117,
+        "selected_edges": 117,
+        "rejected_edges": 0,
+        "num_track_fragments": 10,
+        "fragment_lengths": {
+          "min": 6.0,
+          "median": 15.0,
+          "max": 15.0,
+          "mean": 12.7
+        },
+        "longest_fragment_len": 15,
+        "isolated_nodes_count": 0,
+        "nodes_with_predecessor_only": 10,
+        "nodes_with_successor_only": 10,
+        "nodes_with_both": 107,
+        "nodes_with_neither": 0,
+        "constraint_violations_count": 0,
+        "gt_edges_count": 117,
+        "true_positives": 117,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "edge_precision": 1.0,
+        "edge_recall": 1.0,
+        "edge_f1": 1.0
+      }
+    },
+    "Combined ILP": {
+      "solver_result": {
+        "status": "optimal",
+        "success": true,
+        "objective_value": 601.454564791255,
+        "solve_time_sec": 0.009462118148803711,
+        "num_variables": 117,
+        "num_constraints": 234,
+        "selected_edge_count": 117,
+        "termination_reason": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+      },
+      "diagnostics": {
+        "total_nodes": 127,
+        "total_candidate_edges": 117,
+        "selected_edges": 117,
+        "rejected_edges": 0,
+        "num_track_fragments": 10,
+        "fragment_lengths": {
+          "min": 6.0,
+          "median": 15.0,
+          "max": 15.0,
+          "mean": 12.7
+        },
+        "longest_fragment_len": 15,
+        "isolated_nodes_count": 0,
+        "nodes_with_predecessor_only": 10,
+        "nodes_with_successor_only": 10,
+        "nodes_with_both": 107,
+        "nodes_with_neither": 0,
+        "constraint_violations_count": 0,
+        "gt_edges_count": 117,
+        "true_positives": 117,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "edge_precision": 1.0,
+        "edge_recall": 1.0,
+        "edge_f1": 1.0
+      }
+    }
+  },
+  "distance_ambiguity_analysis": {
+    "positive_distances_stats": {
+      "count": 117,
+      "mean_um": 1.1643353019457243,
+      "median_um": 0.9084026158592896,
+      "max_um": 3.9804208320226646
+    },
+    "negative_distances_stats": {
+      "count": 0,
+      "mean_um": null
+    },
+    "distance_bins": {
+      "0.0-2.0um": {
+        "pos": 104,
+        "neg": 0
+      },
+      "2.0-5.0um": {
+        "pos": 13,
+        "neg": 0
+      },
+      "5.0-10.0um": {
+        "pos": 0,
+        "neg": 0
+      },
+      "10.0-20.0um": {
+        "pos": 0,
+        "neg": 0
+      },
+      "20.0-35.0um": {
+        "pos": 0,
+        "neg": 0
+      }
+    },
+    "is_ambiguous": false,
+    "conclusion": "The test candidate graph contains zero negative candidate edges because all candidate proposals within 20 um corresponded to true ground-truth continuations. Thus, on this local sample, the test set is geometrically un-ambiguous."
+  },
+  "test_label_leakage_audit": {
+    "test_labels_used_during_training": false,
+    "test_labels_used_during_validation": false,
+    "test_labels_used_during_checkpoint_selection": false,
+    "leakage_status": "ZERO_LEAKAGE_STRICTLY_VERIFIED"
+  }
+}
