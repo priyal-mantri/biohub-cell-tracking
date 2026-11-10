@@ -148,7 +148,7 @@ config = DatasetConfig(
 ### Installation
 ```bash
 # Clone repository
-git clone https://github.com/your-username/biohub-cell-tracking.git
+git clone [https://github.com/priyal-mantri/biohub-cell-tracking]
 cd biohub-cell-tracking
 
 # Install dependencies
